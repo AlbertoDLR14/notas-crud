@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="estilos/estilos.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div id="titulo">
+        <h1>NOTAS</h1>
+    </div>
+    <div id="notas">
+        <div class="crear">
+            <input type="text" id="notaTitulo" placeholder="Añadir una nota...">
+            <div class="miNota">
+                <hr>
+                <textarea name="texto" id="notaTexto" placeholder="Texto..."></textarea>
+                <div class="cajaBotonCrear"><button id="notaCrear">Crear</button></div>
+            </div>
+        </div>
+    </div>
+    <div id="mostrarNotas">
+        <div class="mostrarNotas_miNota">
+            <h2 class="miNota_titulo">Hola cocacola</h2>
+            <p class="miNota_texto">Lorem ipsum dolor blablab lablablaaslkdna as d asds</p>
+            <div class="borrarNota"><span class="material-icons iconoBorrar ocultarIcono">
+                delete
+                </span></div>
+        </div>
+    </div>
+    <div id="todaNota">
+        <div class="notaGrande">
+            <input type="text" id="tituloEditar" placeholder="Editar título de la nota...">
+            <hr>
+            <textarea name="texto" id="textoEditar" placeholder="Texto..."></textarea>
+            <div class="cajaEditarNota">
+                <button id="cerrarNota">Cerrar</button>
+                <button id="guardarNota">Guardar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
